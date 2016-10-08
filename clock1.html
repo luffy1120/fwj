@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<img src="img/0.JPG">
+<img src="img/0.JPG">
+<img src="img/colon.JPG">
+<img src="img/0.JPG">
+<img src="img/0.JPG">
+<img src="img/colon.JPG">
+<img src="img/0.JPG">
+<img src="img/0.JPG">
+<script>
+var aImg = document.getElementsByTagName('img');
+setInterval( fnTime, 1000 );
+fnTime ();
+function fnTime () {
+	var newdate = new Date();
+var iho = newdate.getHours();
+var imin = newdate.getMinutes();
+var ise = newdate.getSeconds();
+var str = two(iho) + two(imin) + two(ise);
+for(var i=0;i<str.length;i++){
+	if(i==2){aImg[i+1].src = 'img/' + str.charAt(i) + '.JPG';}
+	else if(i==5){aImg[i+2].src = 'img/' + str.charAt(i) + '.JPG';}
+	else {aImg[i].src = 'img/' + str.charAt(i) + '.JPG';}
+	}
+}
+function two ( n ) {
+	return n < 10 ?  '0' + n : '' + n;
+}
+</script>
+</body>
+</html>
