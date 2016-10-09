@@ -1,162 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>C丶F</title>
-<style>
-body, div, p, span, span, ul, li, ol, dl, dt, dd {
-    margin: 0;
-    padding: 0;
-}
-body{margin:0;background-image: radial-gradient(ellipse at 50% 70%, hsla(240, 1%, 90%, 1), hsla(225, 8%, 28%, 1));width:100%;height:100%;}
-#box{width:300px;height:300px;margin:230px auto;background-image: linear-gradient(#ffffff 40px, #ddecf2 210px, #d3e3e9);position:relative;
-	-ms-border-radius:60px;
-	-moz-border-radius:60px;
-	-webkit-border-radius:60px;
-	-o-border-radius:60px;
-	border-radius:60px;
-	
-	-moz-box-shadow:0px -4px 3px 3px #b8bdca inset;
-	-webkit-box-shadow:0px -4px 3px 3px #b8bdca inset;
-	-o-box-shadow:0px -4px 3px 3px #b8bdca inset;
-	box-shadow:0px -4px 3px 3px #b8bdca inset;
-}
-#box:after {
-    content: "";
-    height: 17px;
-    width: 250px;
-    position: absolute;
-    top: 96%;
-    margin-left: 25px;
-    background: #2a2a2b;
-    -webkit-filter: blur(8px);
-    z-index: -1;
-}
-#box1{width:200px;height:200px;background-image:linear-gradient(#f9fdff, #d9eaf8);position:absolute;top:50px;left:50px;
-	-ms-border-radius:200px;
-	-moz-border-radius:200px;
-	-webkit-border-radius:200px;
-	-o-border-radius:200px;
-	border-radius:200px;
-	
-	-moz-box-shadow: 0px 15px 24px -1px #7a8fae;
-	-webkit-box-shadow:0px 15px 24px -1px #7a8fae;
-	-o-box-shadow:0px 15px 24px -1px #7a8fae;
-	box-shadow: 0px 15px 24px -1px #7a8fae;
-	
-	font-size: 20px;;
-    color: #8da6b8;
-    font-family: Arial;
-	z-index:2;}
-.hour3{position:absolute;top:90px;left:165px;}
-.hour6{position:absolute;top:160px;left:95px;}
-.hour9{position:absolute;top:90px;left:20px;}
-.hour12{position:absolute;top:20px;left:85px;}
-#hour, #minutes, #seconds {
-    position: absolute;
-    left: 50%;
-    height: 200px;
-    width: 1px;
-}
-#seconds {
-    z-index: 23;
-}
-
-#minutes {
-    z-index: 22;
-
-}
-
-#hour {
-    z-index: 21;
-
-}
-#hour:after{content: "";width:6px;height:60px;position:absolute;top:58px;left:-3px;background:#3CF;
-		-ms-border-radius:5px;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		-o-border-radius:5px;
-		border-radius:5px;
-		z-index: -1;
-}
-#minutes:after{content: "";width:4px;height:70px;position:absolute;top:52px;left:-2px;background:#3CF;
-		-ms-border-radius:5px;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		-o-border-radius:5px;
-		border-radius:5px;
-		z-index: -1;
-}
-#seconds:after{content: "";width:2px;height:80px;position:absolute;top:46px;left:-1px;background:#3CF;
-		-ms-border-radius:5px;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		-o-border-radius:5px;
-		border-radius:5px;
-		z-index: -1;
-}
-#point{width:10px;height:10px;background:#CCC;position:absolute;top:91px;left:91px;border:4px solid #999;
-		-ms-border-radius:10px;
-		-moz-border-radius:10px;
-		-webkit-border-radius:10px;
-		-o-border-radius:10px;
-		border-radius:10px;
-		z-index:30;
-}
-.hour1{position:absolute;top:30px;left:130px;font-size: 16px;}
-.hour2{position:absolute;top:55px;left:155px;font-size: 16px;}
-.hour4{position:absolute;top:125px;left:155px;font-size: 16px;}
-.hour5{position:absolute;top:150px;left:130px;font-size: 16px;}
-
-.hour7{position:absolute;top:150px;left:60px;font-size: 16px;}
-.hour8{position:absolute;top:125px;left:35px;font-size: 16px;}
-.hour10{position:absolute;top:55px;left:28px;font-size: 16px;}
-.hour11{position:absolute;top:28px;left:52px;font-size: 16px;}
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>C&F的博客</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/clock.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div id="box">
-	<div id="box1">
-    	<i class="hour3">3</i>
-        <i class="hour6">6</i>
-        <i class="hour9">9</i>
-        <i class="hour12">12</i>
+<div class='header'>
+	<div>
+    	<p>C&amp;F</p>
+    	<div id="box">
+			<div id="box1">
+    			<i class="hour3">3</i>
+        		<i class="hour6">6</i>
+        		<i class="hour9">9</i>
+        		<i class="hour12">12</i>
         
-        <i class="hour1">1</i>
-        <i class="hour2">2</i>
-        <i class="hour4">4</i>
-        <i class="hour5">5</i>
+       		 	<i class="hour1">1</i>
+        		<i class="hour2">2</i>
+        		<i class="hour4">4</i>
+        		<i class="hour5">5</i>
         
-        <i class="hour7">7</i>
-        <i class="hour8">8</i>
-        <i class="hour10">10</i>
-        <i class="hour11">11</i>
+        		<i class="hour7">7</i>
+        		<i class="hour8">8</i>
+        		<i class="hour10">10</i>
+        		<i class="hour11">11</i>
         
-        <div id="hour111"></div>
+        	<div id="hour111"></div>
         
-        <div id="hour"></div>
-        <div id="minutes"></div>
-        <div id="seconds"></div>
-   		<div id="point"></div>
+        	<div id="hour"></div>
+       		<div id="minutes"></div>
+        	<div id="seconds"></div>
+   			<div id="point"></div>
     </div>
 </div>
-<script>
-var oH = document.getElementById("hour");
-var oM = document.getElementById("minutes");
-var oS = document.getElementById("seconds");
-var clock = setInterval(function (){
-	var newDate = new Date();
-	var hour = newDate.getHours();
-	var minute = newDate.getMinutes();
-	var second = newDate.getSeconds();
-	
-	var clockhour = hour % 12 * 30 + minute/2;
-	
-	oH.style.transform = "rotate(" + clockhour + "deg)";
-	oM.style.transform = "rotate(" + minute * 6 + "deg)";
-	oS.style.transform = "rotate(" + second * 6  + "deg)";
-	});
-</script>
+    </div>
+    <ul class='nav'>
+    	<li><a href="#" class="active">首页</a></li>
+        <li><a href="#">关于我</a></li>
+        <li><a href="#">慢生活</a></li>
+        <li><a href="#">点滴记忆</a></li>
+        <li><a href="#">C&amp;F相册</a></li>
+    </ul>	
+</div>
+<div class="aside">
+	<div class="me"><a href="#"><span>关于陈浩</span></a></div>
+    <div class="topspaceinfo">
+      <h1>C&amp;F</h1>
+      <p>执子之手，共你一世风霜；吻子之眸，赠你一世深情。</p>
+    </div>
+      <div class="about_c">
+      <p>网名：C丶浩	</p>
+      <p>职业：工程师 </p>
+      <p>籍贯：山西-吕梁</p>
+      <p>电话：1354126808</p>
+      <p>邮箱：1354126808@qq.com</p>
+    </div>
+</div>
+<script src="js/clock.js"></script>>
 </body>
 </html>
