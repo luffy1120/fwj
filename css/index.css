@@ -13,7 +13,9 @@ body{background:#CCC;}
 .nav a{display:block;padding:0px 20px;color:#FFF;}
 .nav a:hover{background:#4ec431;}
 .nav .active{background:#4ec431;}
-.aside{width:250px;height:1100px;background:#1692e4;float:right;margin:-200px 249px 0 0;position:relative;}
+
+
+.aside{width:250px;height:1100px;background:#1692e4;float:right;position:absolute;top:0px;right:249px;}
 .me a{display: block;padding-top: 100px; width:150px; background: url(../images/ch.jpg) no-repeat; background-size: 150px;font-size:14px;
 }
 .me{ margin: 10px auto 0 auto; width: 150px; height: 150px;;
@@ -42,3 +44,48 @@ body{background:#CCC;}
 .about_c p:last-child { background-position: 15px -97px }
 .about_c p { display: block; padding-left: 40px; }
 .about_c p:hover { background: #222 }
+
+
+#bank{width:760px;height:330px;position:relative;margin-left:300px;border:10px #fff solid;}
+#img1{width:760px;height:330px;}
+#left,#right{position:absolute;top:150px;index:1;opacity:0.3;}
+#left{left:0px;}
+#right{right:0px;}
+#left:hover{opacity:1;}
+#right:hover{opacity:1;}
+#one,#two,#three,#four{display:bolck;width:10px;height:10px;background:#fff;position:absolute;bottom:20px;
+		-ms-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+}
+#one{left:290px;}
+#two{left:330px;}
+#three{left:370px;}
+#four{left:410px;}
+#one:hover img,#two:hover img,#three:hover img,#four:hover img{z-index:1;}
+#one img,#two img,#three img,#four img{width:150px;height:100px;position:absolute;bottom:15px;left:-75px;z-index:-1;}
+#bank .active{background:#0CF;}
+.texts { line-height: 36px; padding:90px 0 0 40px; text-shadow: 1px 1px rgba(255,255,255,0.3);
+		position:absolute;top:30px;color:#333;font-size:18px;font-weight:bold;}
+.texts p { -webkit-transition: all 1s; 
+			-moz-transition: all 1s; 
+			-o-transition: all 1s; 
+			transition: all 1s; 
+			-webkit-transform: translate(60px); 
+			-moz-transform: translate(60px); 
+			-o-transform: translate(60px); 
+			-ms-transform: translate(60px); 
+			transform: translate(60px); }
+.texts p:hover { padding-left: 20px }
+.texts p:nth-child(1) { -webkit-animation: animations 3s ease-out 1s backwards; 
+						-moz-animation: animations 3s ease-out 1s backwards; 
+						-o-animation: animations 3s ease-out 1s backwards; 
+						-ms-animation: animations 3s ease-out 1s backwards; 
+						animation: animations 3s ease-out 1s backwards; }
+.texts p:nth-child(2) { -webkit-animation: animations 3s ease-out 4s backwards; 
+						-moz-animation: animations 3s ease-out 4s backwards; 
+						-o-animation: animations 3s ease-out 4s backwards; 
+						-ms-animation: animations 3s ease-out 4s backwards; 
+						animation: animations 3s ease-out 4s backwards; }
